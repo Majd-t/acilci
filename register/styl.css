@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #d61b15, #a2110d);
+    background-image: url(resimler/_Acılci12\ -\ Register.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1400px;
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    padding: 20px;
+    transform: skew(-10deg);
+}
+
+.left {
+    display: block;
+    color: white;
+    padding: 40px;
+    width: 50%;
+    justify-content: center;
+    transform: skew(10deg);
+}
+
+.right {
+    background: #f5f5f5;
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 60;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input {
+    height: 60px;
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 21px;
+    font-weight: 100;
+    outline: none;
+    background: white;
+    transition: all 0.3s;
+    transform: skew(-20deg);
+}
+
+.login-btn, .google-btn {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: skew(-1deg);
+}
+
+.login-btn {
+    height: 60px;
+    width: 200px;
+    background: #c00;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: skew(-1deg);
+    font-size: 18px;
+}
+
+.google-btn {
+    background: white;
+    border: 2px solid #ccc;
+    color: black;
+    cursor: pointer;
+    transform: skew(-1deg);
+    margin: 5px;
+    height: 60px;
+    width: 200px;
+}
+
+.google-btn img {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.login-btn img {
+    width: 17%;
+    margin-right: 10px;
+}
+
+.links p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.links a {
+    color: #c00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.register-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    width: 400px;
+    height: 95px;
+    transform: skew(-20deg);
+    margin-top: 40px;
+}
+
+.provider-link {
+    background-color: #d61b15;
+    color: white;
+}
+
+.customer-link {
+    background-color: #fabc05;
+    color: white;
+}
+
+.register-box a:hover {
+    opacity: 0.8;
+}
+
+.left img {
+    width: 100px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+    margin-top: 25px;
+}
+
+select {
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    transform: skew(-20deg);
+    border-radius: 8px;
+}
+
+/* Media Query للهواتف (تحت 768px للرأسي، تحت 1024px للأفقي) */
+@media (max-width: 1024px) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        max-width: 90%;
+        padding: 15px;
+        transform: none; /* إزالة التحوير على الهواتف */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+        transform: none; /* إزالة التحوير على الهواتف */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    input, .login-btn, .google-btn {
+        width: 100%;
+        max-width: 300px;
+        height: 50px;
+        font-size: 16px;
+        transform: none; /* إزالة التحوير على الهواتف */
+        border-radius: 10px;
+    }
+
+    .login-btn, .google-btn {
+        margin: 10px 0;
+    }
+
+    .google-btn img, .login-btn img {
+        display: none; /* إخفاء الصور على الهواتف لتوفير المساحة */
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+    }
+
+    .register-box {
+        gap: 10px;
+    }
+
+    .register-box a {
+        width: 80%;
+        max-width: 250px;
+        height: 60px;
+        font-size: 18px;
+        padding: 10px;
+        transform: none; /* إزالة التحوير على الهواتف */
+        margin-top: 20px;
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    select {
+        width: 100%;
+        height: 40px;
+        transform: none; /* إزالة التحوير على الهواتف */
+        border-radius: 8px;
+    }
+
+    /* تحسين التباعد والتصميم العام */
+    .right {
+        background: #f5f5f5;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* الحفاظ على الألوان والجمالية */
+    .login-btn {
+        background: #c00;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .google-btn {
+        background: white;
+        border: 2px solid #ccc;
+        color: black;
+        border-radius: 10px;
+    }
+
+    .provider-link, .customer-link {
+        border-radius: 10px;
+    }
+
+    /* إضافة ظل خفيف للعناصر */
+    .service-card, .container, .right {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* الحفاظ على الإعدادات الأصلية للحواسيب (أكبر من 1024px) */
+@media (min-width: 1025px) {
+    /* لا تغيير هنا، نحافظ على الكود الأصلي */
+}
