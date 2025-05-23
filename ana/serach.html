@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Search Bar Redesign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* تصميم حاوية البحث الكاملة */
+        .search-container {
+            display: flex;
+            position: relative;
+            width: 500px; /* عرض الحاوية - يمكنك تعديله */
+            height: 60px; /* ارتفاع الحاوية - يمكنك تعديله */
+            overflow: hidden;
+            border-radius: 15px; /* تدوير الزوايا الخارجية */
+            transform: skew(-20deg); /* انحناء الحاوية بنفس مقدار انحناء الزر بالنافبار */
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2); /* الظل، مثل النافبار */
+        }
+
+        /* تصميم زر البحث (الجزء الأيسر) */
+        .search-icon {
+            background-color: #111; /* لون خلفية الزر - أسود مثل الزر بالنافبار */
+            color: white;
+            width: 80px; /* عرض زر البحث - يمكنك تعديله */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            position: relative;
+        }
+
+        /* تصميم الأيقونة داخل زر البحث */
+        .search-icon i {
+            transform: skew(20deg); /* إرجاع الأيقونة لوضعها الطبيعي بعد الانحناء */
+        }
+
+        /* تصميم حقل الإدخال (الجزء الأيمن) */
+        .search-input {
+            flex: 1;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء شفافة جداً */
+            padding: 0 20px; /* المسافة الداخلية - يمكنك تعديلها */
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            outline: none;
+        }
+
+        /* تصميم placeholder في حقل البحث */
+        .search-input::placeholder {
+            color: #aaa;
+            font-weight: normal;
+            transform: skew(20deg); /* إرجاع النص لوضعه الطبيعي بعد الانحناء */
+            display: inline-block;
+        }
+
+        /* إعادة النص المكتوب في حقل البحث للوضع الطبيعي */
+        .search-input-text {
+            transform: skew(20deg);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- حاوية البحث الجديدة -->
+    <div class="search-container">
+        <!-- زر البحث المنحني - على اليسار -->
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
+        <!-- حقل إدخال البحث - على اليمين -->
+        <input type="text" placeholder="Ara" class="search-input">
+    </div>
+
+    <!-- سكريبت لإضافة class للنص المكتوب في حقل البحث لتصحيح انحناء النص -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const input = document.querySelector('.search-input');
+            
+            input.addEventListener('input', function() {
+                // تطبيق التصحيح على النص المكتوب فقط إذا كان هناك حاجة لذلك
+                // هذا اختياري وقد لا تحتاج إليه بناءً على متطلباتك البصرية
+            });
+        });
+    </script>
+</body>
+</html>

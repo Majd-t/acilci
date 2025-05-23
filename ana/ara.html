@@ -1,0 +1,31 @@
+<div class="search-container">
+    <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <input type="text" placeholder="Ara" class="search-input" id="search-input">
+</div>
+
+
+
+
+
+<script>
+    const searchInput = document.getElementById('search-input');
+    const cards = document.querySelectorAll('.card');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase();
+
+        cards.forEach(card => {
+            const cardText = card.innerText.toLowerCase();
+            if (cardText.includes(searchTerm)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+
+
