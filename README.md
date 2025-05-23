@@ -66,3 +66,79 @@ Acilci was born to address the growing need for instant, effective solutions in 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-repo/acilci.git
+
+
+
+   <div align="center">
+  <img src="./assets/acilci-logo.png" alt="Acilci Logo" width="200"/>
+  <h1>Acilci - Your Real-Time Service Connection Platform 🚀</h1>
+  <p>A seamless platform connecting customers with service providers for urgent and planned services across Turkey.</p>
+  
+  <!-- Badges -->
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)]()
+  [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](./CONTRIBUTING.md)
+</div>
+
+---
+
+## 📖 Table of Contents
+- [About Acilci](#about-acilci)
+- [Key Features](#key-features)
+- [User Roles](#user-roles)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact Us](#contact-us)
+
+---
+
+## 🌟 About Acilci
+Acilci is designed to meet the fast-paced demands of modern life in Turkey, connecting customers with reliable service providers for home, technical, and emergency services. With a focus on speed, trust, and accessibility, Acilci is your go-to platform for instant solutions.
+
+- **Mission**: Bridge the gap between customers and professionals with a user-friendly, location-based platform.
+- **Vision**: Be the most valuable resource for instant service solutions.
+
+<div align="center">
+  <img src="./screenshots/homepage.png" alt="Acilci Homepage" width="600"/>
+  <p><i>Acilci Homepage: Search and connect with services instantly.</i></p>
+</div>
+
+---
+
+## 🔑 Key Features
+| Feature | Description |
+|---------|-------------|
+| 📍 **Location-Based Search** | Find nearby service providers using geolocation technology. |
+| 💬 **Real-Time Chat** | Communicate directly with providers to clarify details and coordinate services. |
+| ⚡ **Emergency Mode** | Instant connection to providers for urgent needs. |
+| ⭐ **Rating System** | Evaluate and review services to ensure quality and trust. |
+| 📱 **Mobile-Friendly** | Responsive design for seamless use on all devices. |
+| 🛠️ **Admin Panel** | Comprehensive management of users and services. |
+
+---
+
+## 👥 User Roles
+- **Customer**: Search for services, chat with providers, submit requests, and provide feedback.
+- **Service Provider**: Manage profiles, respond to requests, and enable emergency mode.
+- **Admin**: Oversee platform operations, manage users, and ensure quality control.
+
+---
+
+## 📸 Screenshots
+<div align="center">
+  <img src="./screenshots/chat.png" alt="Chat Interface" width="400"/>
+  <p><i>Real-time chat interface for customer-provider communication.</i></p>
+  
+  <img src="./screenshots/provider-dashboard.png" alt="Provider Dashboard" width="400"/>
+  <p><i>Service provider dashboard for managing services and requests.</i></p>
+</div>
+
+---
+
+## 🛠️ Installation
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repo/acilci.git
